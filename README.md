@@ -1,10 +1,11 @@
 # hugo-mod-github-readme-stats
 
-A Hugo module that thinly wraps the [GitHub Readme Stats project](https://github.com/anuraghazra/github-readme-stats).
+A Hugo module that thinly wraps the [GitHub Readme Stats](https://github.com/anuraghazra/github-readme-stats)
+project.
 
 GitHub Readme Stats works with Hugo out of the box. However, with this module,
-you can also use them within your Hugo templates. Shortcodes are also included,
-so you don't have to directly deal with query string parameters.
+you can also use them within your Hugo templates. The module includes shortcodes,
+so you don't have to deal with query string parameters.
 
 ## Getting Started
 
@@ -40,3 +41,25 @@ since the module only wraps the original config options:
 - [Stats Card Exclusive Options](https://github.com/anuraghazra/github-readme-stats#stats-card-exclusive-options)
 - [Repo Card Exclusive Options](https://github.com/anuraghazra/github-readme-stats#repo-card-exclusive-options)
 - [Language Card Exclusive Options](https://github.com/anuraghazra/github-readme-stats#language-card-exclusive-options)
+
+## Examples
+
+You can use partials in your templates:
+
+<!-- markdownlint-disable MD013 -->
+
+```text
+{{ partial "github-readme-stats/pin.html" (dict "username" "schnerring" "repo" "hugo-mod-github-readme-stats" "show_owner" "true") }}
+```
+
+<!-- markdownlint-enable MD013 -->
+
+Or use shortcodes in your markdown content:
+
+<!-- markdownlint-disable MD013 -->
+
+```text
+{{< github-readme-stats/stats class="gh-stats-card" username="schnerring" theme="gruvbox_light" >}}
+```
+
+<!-- markdownlint-enable MD013 -->
