@@ -8,4 +8,9 @@
 {{ $options = $options | append "hide" "hide_title" "layout" "card_width" "langs_count" "exclude_repo" "custom_title" }}
 
 {{ $queryString := partial "github-readme-stats/query-string.html" (dict "params" . "options" $options) }}
-{{ $queryString }}
+
+
+<img
+  {{ with .class }}class="{{ . }}"{{ end }}
+  src="https://github-readme-stats.vercel.app/api/top-langs/?{{ $queryString }}"
+/>
