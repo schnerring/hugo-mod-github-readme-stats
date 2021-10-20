@@ -1,3 +1,4 @@
 {{/* GitHub Repo Card */}}
 {{/* See https://github.com/anuraghazra/github-readme-stats#github-extra-pins */}}
 {{ $options := slice "username" "repo" }}
+{{ $options = $options | append (partial "github-readme-stats/common-options.html" .) }}

@@ -1,3 +1,4 @@
 {{/* GitHub Stats Card */}}
 {{/* See https://github.com/anuraghazra/github-readme-stats#github-stats-card */}}
 {{ $options := slice "username" }}
+{{ $options = $options | append (partial "github-readme-stats/common-options.html" .) }}

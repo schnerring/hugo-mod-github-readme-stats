@@ -1,3 +1,4 @@
 {{/* GitHub Top Languages Card */}}
 {{/* See https://github.com/anuraghazra/github-readme-stats#top-languages-card */}}
 {{ $options := slice "username" }}
+{{ $options = $options | append (partial "github-readme-stats/common-options.html" .) }}
