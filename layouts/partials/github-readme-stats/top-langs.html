@@ -1,4 +1,4 @@
-{{/* GitHub Top Languages Card */}}
+{{/* Top Languages Card */}}
 {{/* See https://github.com/anuraghazra/github-readme-stats#top-languages-card */}}
 {{ $options := slice "username" }}
 {{ $options = $options | append (partial "github-readme-stats/common-options.html" .) }}
@@ -12,5 +12,5 @@
 
 <img
   {{ with .class }}class="{{ . }}"{{ end }}
-  src="https://github-readme-stats.vercel.app/api/top-langs/?{{ $queryString }}"
+  src="https://github-readme-stats.vercel.app/api/top-langs?{{ $queryString }}"
 />

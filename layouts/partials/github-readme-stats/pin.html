@@ -1,4 +1,4 @@
-{{/* GitHub Repo Card */}}
+{{/* Repo Card */}}
 {{/* See https://github.com/anuraghazra/github-readme-stats#github-extra-pins */}}
 {{ $options := slice "username" "repo" }}
 {{ $options = $options | append (partial "github-readme-stats/common-options.html" .) }}
@@ -8,10 +8,9 @@
 {{ $options = $options | append "show_owner" }}
 
 {{ $queryString := partial "github-readme-stats/query-string.html" (dict "params" . "options" $options) }}
-{{ $queryString }}
 
 
 <img
   {{ with .class }}class="{{ . }}"{{ end }}
-  src="https://github-readme-stats.vercel.app/api/pin/?{{ $queryString }}"
+  src="https://github-readme-stats.vercel.app/api/pin?{{ $queryString }}"
 />

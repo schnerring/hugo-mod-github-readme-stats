@@ -31,8 +31,8 @@ hugo mod get
 
 ## Configuration
 
-Only the `class` parameter is specific to the module. If set, the value of
-`class` is added to the `img` of the stat card.
+Only the `class` parameter is specific to the module. If set, a `class`
+attribute gets added to stat card `img` element.
 
 For the rest of the configuration options, refer to the GitHub Readme Stats repo,
 since the module only wraps the original config options:
@@ -41,6 +41,7 @@ since the module only wraps the original config options:
 - [Stats Card Exclusive Options](https://github.com/anuraghazra/github-readme-stats#stats-card-exclusive-options)
 - [Repo Card Exclusive Options](https://github.com/anuraghazra/github-readme-stats#repo-card-exclusive-options)
 - [Language Card Exclusive Options](https://github.com/anuraghazra/github-readme-stats#language-card-exclusive-options)
+- [Wakatime Card Exclusive Options](https://github.com/anuraghazra/github-readme-stats#wakatime-card-exclusive-options)
 
 ## Examples
 
@@ -48,7 +49,7 @@ You can use partials in your templates:
 
 <!-- markdownlint-disable MD013 -->
 
-```text
+```go-template
 {{ partial "github-readme-stats/pin.html" (dict "username" "schnerring" "repo" "hugo-mod-github-readme-stats" "show_owner" "true") }}
 ```
 
@@ -58,7 +59,7 @@ Or use shortcodes in your markdown content:
 
 <!-- markdownlint-disable MD013 -->
 
-```text
+```go-template
 {{< github-readme-stats/stats class="gh-stats-card" username="schnerring" theme="gruvbox_light" >}}
 ```
 
