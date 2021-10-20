@@ -2,3 +2,7 @@
 {{/* See https://github.com/anuraghazra/github-readme-stats#github-stats-card */}}
 {{ $options := slice "username" }}
 {{ $options = $options | append (partial "github-readme-stats/common-options.html" .) }}
+{{/* Stats Card Exclusive Options */}}
+{{/* See https://github.com/anuraghazra/github-readme-stats#stats-card-exclusive-options */}}
+{{ $options = $options | append "hide" "hide_title" "hide_rank" "show_icons" "include_all_commits" "count_private" "line_height" "custom_title" "disable_animations" }}
+{{ $options }}
