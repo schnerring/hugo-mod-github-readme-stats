@@ -27,3 +27,16 @@ Install the module:
 ```shell
 hugo mod get
 ```
+
+## Configuration
+
+Only the `class` parameter is specific to the module. If set, the value of
+`class` is added to the `img` of the stat card.
+
+For the rest of the configuration options, refer to the GitHub Readme Stats repo,
+since the module only wraps the original config options:
+
+- [Common Options](https://github.com/anuraghazra/github-readme-stats#common-options)
+- [Stats Card Exclusive Options](https://github.com/anuraghazra/github-readme-stats#stats-card-exclusive-options)
+- [Repo Card Exclusive Options](https://github.com/anuraghazra/github-readme-stats#repo-card-exclusive-options)
+- [Language Card Exclusive Options](https://github.com/anuraghazra/github-readme-stats#language-card-exclusive-options)
