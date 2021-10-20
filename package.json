@@ -1,0 +1,53 @@
+{
+  "author": {
+    "email": "3743342+schnerring@users.noreply.github.com",
+    "name": "Michael Schnerring",
+    "url": "https://schnerring.net"
+  },
+  "bugs": {
+    "url": "https://github.com/schnerring/hugo-mod-github-readme-stats/issues"
+  },
+  "comments": {
+    "dependencies": {
+      "simple-icons": "project"
+    },
+    "devDependencies": {
+      "husky": "project",
+      "lint-staged": "project",
+      "markdownlint-cli": "project",
+      "prettier": "project",
+      "prettier-plugin-go-template": "project"
+    }
+  },
+  "dependencies": {
+    "simple-icons": "^5.18.0"
+  },
+  "description": "Hugo shortcodes to add structured JSON Resume data to your Hugo site.",
+  "devDependencies": {
+    "husky": "^7.0.0",
+    "lint-staged": "^11.1.1",
+    "markdownlint-cli": "^0.28.1",
+    "prettier": "^2.3.2",
+    "prettier-plugin-go-template": "0.0.11"
+  },
+  "homepage": "https://github.com/schnerring/hugo-mod-github-readme-stats#readme",
+  "keywords": [
+    "hugo",
+    "json-resume"
+  ],
+  "license": "MIT",
+  "lint-staged": {
+    "*.md": "markdownlint --fix"
+  },
+  "name": "hugo-mod-github-readme-stats",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/schnerring/hugo-mod-github-readme-stats.git"
+  },
+  "scripts": {
+    "lint": "npm run lint:css && npm run lint:js && npm run lint:md",
+    "lint:md": "markdownlint --fix **/*.md",
+    "prepare": "husky install"
+  },
+  "version": "1.0.0"
+}
