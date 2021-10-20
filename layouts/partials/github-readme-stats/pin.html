@@ -2,7 +2,10 @@
 {{/* See https://github.com/anuraghazra/github-readme-stats#github-extra-pins */}}
 {{ $options := slice "username" "repo" }}
 {{ $options = $options | append (partial "github-readme-stats/common-options.html" .) }}
+
 {{/* Repo Card Exclusive Options */}}
 {{/* See https://github.com/anuraghazra/github-readme-stats#repo-card-exclusive-options */}}
 {{ $options = $options | append "show_owner" }}
-{{ $options }}
+
+{{ $queryString := partial "github-readme-stats/query-string.html" (dict "params" . "options" $options) }}
+{{ $queryString }}

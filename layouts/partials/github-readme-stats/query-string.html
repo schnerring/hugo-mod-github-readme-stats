@@ -1,0 +1,9 @@
+{{ $params := .params }}
+{{ $options := .options }}
+{{ $result := slice }}
+{{ range $options }}
+  {{ if isset $params . }}
+    {{ $result = $result | append . (index $params .) }}
+  {{ end }}
+{{ end }}
+{{ return (querify $result | safeURL) }}

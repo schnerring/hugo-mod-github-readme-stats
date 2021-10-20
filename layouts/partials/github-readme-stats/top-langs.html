@@ -2,7 +2,10 @@
 {{/* See https://github.com/anuraghazra/github-readme-stats#top-languages-card */}}
 {{ $options := slice "username" }}
 {{ $options = $options | append (partial "github-readme-stats/common-options.html" .) }}
+
 {{/* Language Card Exclusive Options */}}
 {{/* See https://github.com/anuraghazra/github-readme-stats#language-card-exclusive-options */}}
 {{ $options = $options | append "hide" "hide_title" "layout" "card_width" "langs_count" "exclude_repo" "custom_title" }}
-{{ $options }}
+
+{{ $queryString := partial "github-readme-stats/query-string.html" (dict "params" . "options" $options) }}
+{{ $queryString }}
