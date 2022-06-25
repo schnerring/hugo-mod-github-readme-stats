@@ -25,9 +25,7 @@
   "lint-staged": {
     "*.md": "markdownlint --fix"
   },
-  "dependencies": {
-    "simple-icons": "^6.19.0"
-  },
+  "dependencies": {},
   "devDependencies": {
     "husky": "^8.0.1",
     "lint-staged": "^13.0.3",

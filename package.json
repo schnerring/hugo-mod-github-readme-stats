@@ -8,9 +8,7 @@
     "url": "https://github.com/schnerring/hugo-mod-github-readme-stats/issues"
   },
   "comments": {
-    "dependencies": {
-      "simple-icons": "project"
-    },
+    "dependencies": {},
     "devDependencies": {
       "husky": "project",
       "lint-staged": "project",
@@ -19,9 +17,7 @@
       "prettier-plugin-go-template": "project"
     }
   },
-  "dependencies": {
-    "simple-icons": "^6.19.0"
-  },
+  "dependencies": {},
   "description": "Hugo shortcodes to add structured JSON Resume data to your Hugo site.",
   "devDependencies": {
     "husky": "^8.0.1",
