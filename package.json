@@ -20,10 +20,10 @@
   "dependencies": {},
   "description": "Hugo shortcodes to add structured JSON Resume data to your Hugo site.",
   "devDependencies": {
-    "husky": "^8.0.1",
-    "lint-staged": "^13.0.3",
-    "markdownlint-cli": "^0.31.1",
-    "prettier": "^2.7.1",
+    "husky": "^8.0.3",
+    "lint-staged": "^13.1.2",
+    "markdownlint-cli": "^0.33.0",
+    "prettier": "^2.8.4",
     "prettier-plugin-go-template": "^0.0.13"
   },
   "homepage": "https://github.com/schnerring/hugo-mod-github-readme-stats#readme",
